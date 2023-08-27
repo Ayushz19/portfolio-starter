@@ -69,20 +69,20 @@
 }
 
 .i-right > :nth-child(1) {
-  transform: scale(0.69);
+  transform: scale(0.6);
   left: -15%;
   top: -9%;
 }
 
 .i-right > :nth-child(2) {
   top: -4.6rem;
-  transform: scale(0.67);
+  transform: scale(0.5);
   left: -3rem;
 }
 .i-right > :nth-child(3) {
-  transform: scale(1);
+  transform: scale(0.7);
   left: 2%;
-  bottom: 20%;
+  bottom: 6%;
 }
 
 .blur{

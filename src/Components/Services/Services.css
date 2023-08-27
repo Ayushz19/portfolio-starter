@@ -10,29 +10,49 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-left: 8rem;
 }
 
-.awesome>:nth-child(1){
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight: bold;
+.awesome > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.awesome>:nth-child(2){
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
+.awesome > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.awesome>:nth-child(3){
-    color: var(--grey);
-    font-size: 20px;
-    margin-top: 1rem;
+.awesome > :nth-child(3) {
+  color: var(--grey);
+  font-size: 20px;
+  margin-top: 1rem;
 }
 
-.s-button{
-    width: 8rem;
-    height: 2rem;
-    margin-top: 1rem;
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.cards {
+  position: relative;
+  left: 20%;
+  bottom: 15%;
+}
+
+.cards > * {
+  position: absolute;
+}
+
+.s-blur2{
+  left: 14rem;
+  top: 15rem;
+
+}
+
+.s-blur1{
+  top: 13rem;
+  left: -18rem;
 }
