@@ -18,7 +18,7 @@ const Portfolio = () => {
         <Slider className="portfolio-slider"
         autoplay={true}
         autoplayScroll={1}
-        autoplaySpeed={2000}>
+        autoplaySpeed={1000}>
 
             <img src={vistaar} alt="" />
               
