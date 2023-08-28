@@ -8,12 +8,14 @@ import Vector2 from "../../img/Vector2.png";
 import Boy from "../../img/boy.png";
 // import thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
-// import glassesimoji from "../../img/glassesimoji.png";
+import glassesimoji from "../../img/glassesimoji.png";
 import { FloatingDiv } from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-
+import { motion } from "framer-motion";
 const Intro = () => {
+  // const transition = { duration: 1, type: "spring" };
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -45,9 +47,19 @@ const Intro = () => {
         <img src={Vector1} alt="" className="" />
         <img src={Vector2} alt="" className="" />
         <img src={Boy} alt="" className="" />
-        <div style={{ top: "-4%", left: "60%" }}>
+
+        
+        <motion.div 
+        initial={{top:'-4%' , left:'74%'}}
+        animate={{ x: -60 }}
+  
+        transition={{ repeat: 100000,
+          repeatType: "reverse",
+          duration: 1}}
+        // style={{ top: "-4%", left: "60%" }}
+        className="floating-div">
           <FloatingDiv image={Crown} txt1="WEB" txt2="Developer" />
-        </div>
+        </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
