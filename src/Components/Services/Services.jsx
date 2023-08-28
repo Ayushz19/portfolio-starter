@@ -5,13 +5,22 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import Resume from './AYUSHZ19_RESUME (1).pdf'
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
+
   return (
     <div className="services">
       {/* {Left side} */}
       <div className="awesome">
-        <span>My</span>
+        <span style={{
+        
+        color: darkMode ? "white" : "",
+      }}>My</span>
         <span>Skills</span>
         <span>
           Lorem Ipsum is simply dummy text of the printing
