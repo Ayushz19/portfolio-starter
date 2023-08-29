@@ -3,6 +3,9 @@
   display: flex;
   justify-content: space-between;
 }
+.n-wrapper>*{
+  cursor: pointer;
+}
 
 .n-left {
   flex: 1;
@@ -42,3 +45,12 @@
 /* .n-button{
     flex: 2;
 } */
+
+@media screen and (max-width:480px) {
+  .n-list{
+    display: none;
+  }
+  .n-button{
+    display: none;
+  }
+}

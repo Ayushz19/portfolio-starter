@@ -48,16 +48,12 @@ const Intro = () => {
         <img src={Vector2} alt="" className="" />
         <img src={Boy} alt="" className="" />
 
-        
-        <motion.div 
-        initial={{top:'-4%' , left:'74%'}}
-        animate={{ x: -60 }}
-  
-        transition={{ repeat: 100000,
-          repeatType: "reverse",
-          duration: 1}}
-        // style={{ top: "-4%", left: "60%" }}
-        className="floating-div">
+        <motion.div
+          initial={{ top: "-4%", left: "74%" }}
+          animate={{ x: -60 }}
+          transition={{ repeat: 100000, repeatType: "reverse", duration: 1 }}
+          className="floating-div"
+        >
           <FloatingDiv image={Crown} txt1="WEB" txt2="Developer" />
         </motion.div>
 

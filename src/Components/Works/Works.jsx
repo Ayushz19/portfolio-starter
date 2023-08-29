@@ -5,6 +5,8 @@ import RA from "../../img/RA.jpeg";
 import VS from "../../img/VS.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { motion } from "framer-motion";
+
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -12,10 +14,13 @@ const Works = () => {
   return (
     <div className="works">
       <div className="awesome">
-        <span style={{
-        
-        color: darkMode ? "white" : "",
-      }}>Worked For All these</span>
+        <span
+          style={{
+            color: darkMode ? "white" : "",
+          }}
+        >
+          Worked For All these
+        </span>
         <span>Organisation</span>
         <span>
           Lorem Ipsum is simply dummy text of the printing
@@ -31,24 +36,35 @@ const Works = () => {
 
         <div className="blur s-blur" style={{ background: "#ABF1FF94" }}></div>
       </div>
-      {/* {{right side}} */}
-      <div className="w-right">
-      <div className="w-mainCircle">
-        <div className="w-secCircle">
-          <img className="ds" src={debsoc} alt="" />
-        </div>
-        <div className="w-secCircle">
-          <img className="ra"src={RA} alt="" />
-        </div>
-        <div className="w-secCircle">
-          <img className="vistaar"src={VS} alt="" />
-        </div>
 
-        {/* bg circle */}
-        <div className="w-backCircle blueCircle"></div>
-        <div className="w-backCircle yellowCircle"></div>
+      <div className="w-right">
+        <motion.div
+          className="w-mainCircle"
+          animate={{ rotate: 360 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 }
+          }}
+          transition={{ repeat: 50, repeatType: "reverse", duration: 10 }}
+          
+          
+        >
+          <div className="w-secCircle">
+            <img className="ds" src={debsoc} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img className="ra" src={RA} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img className="vistaar" src={VS} alt="" />
+          </div>
+
+          {/* bg circle */}
+          
+        </motion.div>
+        <div className="w-backCircle blueCircle" ></div>
+          <div className="w-backCircle yellowCircle"></div>
       </div>
-      </div>    
     </div>
   );
 };
