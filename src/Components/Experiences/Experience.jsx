@@ -11,12 +11,12 @@ const Experience = () => {
     <div className="experience" id="Experience">
       <div className="achievement">
         <div className="circle" 
-      >8+</div>
+      >3+</div>
         <span>Years</span>
         <span>Experience</span>
       </div>
       <div className="achievement">
-        <div className="circle">15+</div>
+        <div className="circle">10+</div>
         <span>completed</span>
         <span>projects</span>
       </div>

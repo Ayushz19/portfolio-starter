@@ -45,7 +45,7 @@ const Services = () => {
           <Card
             emoji={HearEmoji}
             heading={"Design"}
-            detail={"Figma,Sketch,Photoshop,Adobe,Figma,Sketch,Photoshop,Adobe"}
+            detail={"Figma,Sketch,Photoshop,Adobe"}
           />
         </motion.div>
         <motion.div
