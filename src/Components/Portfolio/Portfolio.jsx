@@ -29,7 +29,7 @@ const Portfolio = () => {
         className="portfolio-slider"
         autoplay={true}
         autoplayScroll={1}
-        autoplaySpeed={1000}
+        autoplaySpeed={1500}
       >
         <img src={vistaar} alt="" />
 

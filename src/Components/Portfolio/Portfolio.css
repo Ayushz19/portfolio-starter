@@ -39,4 +39,25 @@
  
 }
 
+@media screen and (max-width: 480px) {
 
+.portfolio{
+    height: 0vh;
+    margin-top: -2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.portfolio-slider{
+   margin-top: 25%;
+}
+
+.portfolio-slider>*{
+    transform: scale(1.5);
+}
+
+}
