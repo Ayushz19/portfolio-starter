@@ -52,6 +52,9 @@
 .mobnav-vis {
   transform: translateX(0) !important;
 }
+.cross{
+  display: none;
+}
 
 @media screen and (max-width: 480px) {
   .ham {
@@ -62,6 +65,14 @@
     position: fixed;
     margin-left: -35px;
     margin-top: -10px;
+  }
+  .cross{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .n-left {
     margin-left: 6rem;
