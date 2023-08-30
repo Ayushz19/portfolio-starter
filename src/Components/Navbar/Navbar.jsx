@@ -2,36 +2,55 @@ import React from "react";
 import "./Navbar.css";
 import Toogle from "../Toogle/Toogle";
 import { Link } from "react-scroll";
-import Services from "../Services/Services";
-import Experience from '../Experiences/Experience'
-import Portfolio from '../Portfolio/Portfolio'
+import Ham from '../../img/ham.png'
+import { useState } from "react";
+
 
 const Navbar = () => {
+  // const [open,setopen]=useState
+
+
   return (
-    <div className="n-wrapper">
+    <div className="n-wrapper"
+    >
+      
+      <img src={Ham} className="ham" onClick={()=>{
+        document.getElementById("mobnav").classList.toggle("mobnav-vis")
+      }}>
+      
+      </img>
+      
       <div className="n-left">
         <div className="n-name">Ayush </div>
         <Toogle />
       </div>
       <div className="n-right">
         <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
+          <ul style={{ listStyleType: "none" }} id="mobnav">
             <Link
               spy={true}
               to="Navbar"
               activeClass="activeClass"
               smooth={true}
             >
-              <li>Home</li>
+              <li onClick={()=>{
+        document.getElementById("mobnav").classList.toggle("mobnav-vis")
+      }}>Home</li>
             </Link>
             <Link spy={true} to="Services" smooth={true}>
-              <li>Services</li>
+              <li onClick={()=>{
+        document.getElementById("mobnav").classList.toggle("mobnav-vis")
+      }}>Services</li>
             </Link>
             <Link spy={true} to="Experience" smooth={true}>
-              <li>Experience</li>
+              <li onClick={()=>{
+        document.getElementById("mobnav").classList.toggle("mobnav-vis")
+      }}>Experience</li>
             </Link>
             <Link spy={true} to="Portfolio" smooth={true}>
-              <li>PortFolio</li>
+              <li onClick={()=>{
+        document.getElementById("mobnav").classList.toggle("mobnav-vis")
+      }}>PortFolio</li>
             </Link>
             <button className="button n-button">Contact Us</button>
           </ul>
