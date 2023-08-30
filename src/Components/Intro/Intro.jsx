@@ -6,15 +6,30 @@ import Instagram from "../../img/instagram.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import Boy from "../../img/boy.png";
-// import thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
-import glassesimoji from "../../img/glassesimoji.png";
 import { FloatingDiv } from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect/dist/core";
 const Intro = () => {
-  // const transition = { duration: 1, type: "spring" };
+  // var app = document.getElementById("ap");
+
+  // var typewriter = new Typewriter(app, {
+  //   loop: true,
+  //   delay: 75,
+  // });
+
+  // typewriter
+    
+  // .pauseFor(2500)
+  // .typeString('Ayush Verma')
+  // .pauseFor(300)
+  // .deleteChars(10)
+  // .typeString('')
+  // .typeString('')
+  // .pauseFor(1000)
+  // .start();
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -30,7 +45,7 @@ const Intro = () => {
           >
             Hi I Am
           </span>
-          <span>Ayush Verma</span>
+          <span id="ap">Ayush Verma</span>
           <span>
             Frontend Developer with experience in web designing and development
             and quality work
