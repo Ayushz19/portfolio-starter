@@ -109,4 +109,10 @@
     left: 10rem !important;
 
   }
+  .awesome{
+    left: 1.5rem;
+  }
+  .awesome > :nth-child(1){
+
+  }
 }
