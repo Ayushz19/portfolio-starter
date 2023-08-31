@@ -21,7 +21,7 @@ const Intro = () => {
   // });
 
   // typewriter
-    
+
   // .pauseFor(2500)
   // .typeString('Ayush Verma')
   // .pauseFor(300)
@@ -53,9 +53,32 @@ const Intro = () => {
         </div>
         <button className="button i-button">Hire me</button>
         <div className="i-icons">
-          <img src={Github} alt="" className="" />
-          <img src={LinkedIn} alt="" className="" />
-          <img src={Instagram} alt="" className="" />
+          <img
+            src={Github}
+            alt=""
+            className=""
+            onClick={() => {
+              window.open("https://github.com/Ayushz19", "_blank");
+            }}
+          />
+          <img
+            src={LinkedIn}
+            alt=""
+            className=""
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/ayush-verma-89123b226/",
+                "_blank"
+              );
+            }}
+          />
+          <img src={Instagram} alt="" className="" 
+           onClick={() => {
+            window.open(
+              "https://www.instagram.com/ayushz19/",
+              "_blank"
+            );
+          }}/>
         </div>
       </div>
       <div className=" i-right">

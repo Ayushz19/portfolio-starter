@@ -31,13 +31,37 @@ const Portfolio = () => {
         autoplayScroll={1}
         autoplaySpeed={1500}
       >
-        <img src={vistaar} alt="" />
+        <img src={vistaar} alt="" 
+         onClick={() => {
+          window.open(
+            "https://vistaar.debsocnitdgp.in/",
+            "_blank"
+          );
+        }}/>
 
-        <img src={fic} alt="" />
+        <img src={fic} alt="" 
+         onClick={() => {
+          window.open(
+            "https://fictionary-frontend-smoky.vercel.app/",
+            "_blank"
+          );
+        }}/>
 
-        <img src={kitchen} alt="" />
+        <img src={kitchen} alt=""
+         onClick={() => {
+          window.open(
+            "https://kitchendotcom.in/",
+            "_blank"
+          );
+        }}/>
 
-        <img src={debsoc} alt="" />
+        <img src={debsoc} alt="" 
+         onClick={() => {
+          window.open(
+            "https://www.debsocnitdgp.in/",
+            "_blank"
+          );
+        }}/>
       </Slider>
     </div>
   );
