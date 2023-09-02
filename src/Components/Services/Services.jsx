@@ -78,7 +78,7 @@ const Services = () => {
           style={{ background: "var(--purple" }}
         ></div>
       </div> */}
-{/* <Roll right> */}
+<Roll right>
       <div className="right-side">
         <h3>My Skills</h3>
         <div className="ul-skills">
@@ -131,7 +131,7 @@ const Services = () => {
           </ul>
         </div>
       </div>
-      {/* </Roll> */}
+      </Roll>
     </div>
   );
 };

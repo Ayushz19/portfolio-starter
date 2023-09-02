@@ -18,6 +18,9 @@
     position: relative;
     z-index: 0;  
 }
+.react-reveal{
+  animation-fill-mode: backwards !important;
+  }
 
 .button{
   border-radius: 34px;

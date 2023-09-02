@@ -11,6 +11,7 @@ import { FloatingDiv } from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import Roll from "react-reveal/Roll";
 // import Typewriter from "typewriter-effect/dist/core";
 const Intro = () => {
   // var app = document.getElementById("ap");
@@ -72,18 +73,21 @@ const Intro = () => {
               );
             }}
           />
-          <img src={Instagram} alt="" className="" 
-           onClick={() => {
-            window.open(
-              "https://www.instagram.com/ayushz19/",
-              "_blank"
-            );
-          }}/>
+          <img
+            src={Instagram}
+            alt=""
+            className=""
+            onClick={() => {
+              window.open("https://www.instagram.com/ayushz19/", "_blank");
+            }}
+          />
         </div>
       </div>
       <div className=" i-right">
         <img src={Vector1} alt="" className="" />
+
         <img src={Vector2} alt="" className="" />
+
         <img src={Boy} alt="" className="" />
 
         <motion.div
@@ -95,8 +99,8 @@ const Intro = () => {
           <FloatingDiv image={Crown} txt1="WEB" txt2="Developer" />
         </motion.div>
 
-        <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
-        <div
+        {/* <div className="blur" style={{ background: "rgb(238 210 255)" }}></div> */}
+        {/* <div
           className="blur"
           style={{
             background: "#C1F5FF",
@@ -105,7 +109,7 @@ const Intro = () => {
             height: "11rem",
             left: "-9rem",
           }}
-        ></div>
+        ></div> */}
       </div>
     </div>
   );
