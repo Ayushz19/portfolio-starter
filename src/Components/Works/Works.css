@@ -88,8 +88,8 @@
     margin-left: -1rem;
     flex-direction: column;
     position: relative;
-    /* margin-top: -140%; */
-    height: 55rem;
+    margin-top: -40%;
+    height: 65rem;
     gap: 5rem;
     padding: 4px;
   }

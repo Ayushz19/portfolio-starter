@@ -90,7 +90,7 @@
     height: 10vh;
   }
 
-  ul {
+  .nav-ul {
     flex-flow: column nowrap;
     background: var(--orange);
 
@@ -104,7 +104,7 @@
     transform: translateX(-100%);
     gap: 7rem !important;
   }
-  li {
+  .nav-ul >li {
     font-size: 2rem;
     position: absolute;
     margin-top: 2rem;

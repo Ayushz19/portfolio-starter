@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="n-right">
         <div className="n-list">
           
-          <ul style={{ listStyleType: "none" }} id="mobnav"
+          <ul className="nav-ul"style={{ listStyleType: "none" }} id="mobnav"
            onClick={() => {
             document
               .getElementById("mobnav")

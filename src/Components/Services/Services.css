@@ -28,6 +28,7 @@
   color: var(--grey);
   font-size: 20px;
   margin-top: 1rem;
+  width: 60vw;
 }
 
 .s-button {
@@ -46,38 +47,114 @@
   position: absolute;
 }
 
-.s-blur2{
+.s-blur2 {
   left: 14rem;
   top: 15rem;
-
 }
 
-.s-blur1{
+.s-blur1 {
   top: 13rem;
   left: -18rem;
 }
+.right-side {
+  position: absolute;
+  right: 2rem;
+  /* margin-top: -60px; */
 
-@media screen and (max-width:480px) {
-  .services{
-    
+  text-align: center;
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+  margin: inherit;
+
+  /* text-shadow: 2px 0px 0 #51ec94,
+  1px 1px 0 #51ec94,
+ 1px 1px 0 #51ec94,
+1px 1px 0 #51ec94;  */
+  text-shadow: 2px 5px rgba(195, 42, 42, 0.833);
+}
+ul svg {
+  border: greenyellow solid 5px;
+  border-radius: 100%;
+  border-spacing: 15px;
+  padding: 18px 18px;
+}
+.ul-skills {
+  display: flex;
+  gap: 1rem;
+}
+ul {
+}
+ul li {
+  list-style-type: none;
+  text-indent: -1.4em;
+}
+li {
+  margin: 6px;
+}
+@media screen and (max-width: 480px) {
+  .services {
     flex-direction: column;
     gap: 5rem;
     height: 66rem;
     padding: 0;
     margin-bottom: 40%;
-
   }
-  .cards{
+
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: -3.5rem;
+    gap: 0 !important;
+  }
+  .ul-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    gap: 0rem !important;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: self-start;
+  }
+
+  li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+ h4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+  /* .cards
+   {
     display: flex;
     flex-direction: column;
     gap: 17rem;
     bottom: 3rem;
     left: 1rem;
-    
   }
 
-  .cards>*{
+  .cards > * {
     position: static;
-  }
- 
+  } */
 }
