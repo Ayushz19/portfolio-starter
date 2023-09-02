@@ -63,6 +63,7 @@ const Portfolio = () => {
           );
         }}/>
       </Slider>
+      <h3 className="image-h" style={{fontSize:'2rem' , marginTop:'-4.7rem'}}>Click to know more</h3>
     </div>
   );
 };

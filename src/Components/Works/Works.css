@@ -8,6 +8,7 @@
 
 .w-right {
   position: relative;
+  right: 20rem ;
 }
 
 .w-mainCircle {
@@ -99,6 +100,7 @@
     justify-content: start;
     transform: scale(0.7);
     margin-top: -3rem;
+    right: 1rem !important;
   }
 
   .w-mainCircle {

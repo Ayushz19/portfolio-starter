@@ -3,7 +3,7 @@
     gap: 5rem;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 20vh;
     margin-bottom: 12rem;
 }
 
@@ -51,6 +51,7 @@
 .experience{
     transform: scale(0.6);
     top: 4rem;
+    height: 50vh !important;
 }
 
 .experience span{
