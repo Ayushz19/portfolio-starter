@@ -4,7 +4,7 @@ import Toogle from "../Toogle/Toogle";
 import { Link } from "react-scroll";
 import Ham from "../../img/ham.png";
 
-import cross from '../../img/cross.png'
+import cross from "../../img/cross.png";
 
 const Navbar = () => {
   // const [open,setopen]=useState
@@ -25,15 +25,16 @@ const Navbar = () => {
       </div>
       <div className="n-right">
         <div className="n-list">
-          
-          <ul className="nav-ul"style={{ listStyleType: "none" }} id="mobnav"
-           onClick={() => {
-            document
-              .getElementById("mobnav")
-              .classList.toggle("mobnav-vis");
-          }}>
-            <img src={cross} className="cross" alt="" ></img>
-            
+          <ul
+            className="nav-ul"
+            style={{ listStyleType: "none" }}
+            id="mobnav"
+            onClick={() => {
+              document.getElementById("mobnav").classList.toggle("mobnav-vis");
+            }}
+          >
+            <img src={cross} className="cross" alt=""></img>
+
             <Link
               spy={true}
               to="Navbar"
@@ -70,6 +71,17 @@ const Navbar = () => {
                 }}
               >
                 Experience
+              </li>
+            </Link>
+            <Link spy={true} to="work" smooth={true}>
+              <li
+                onClick={() => {
+                  document
+                    .getElementById("mobnav")
+                    .classList.toggle("mobnav-vis");
+                }}
+              >
+                Works
               </li>
             </Link>
             <Link spy={true} to="Portfolio" smooth={true}>

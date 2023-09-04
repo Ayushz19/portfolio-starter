@@ -38,51 +38,12 @@ const Services = () => {
         </a>
         <div className="blur s-blur" style={{ background: "#ABF1FF94" }}></div>
       </div>
-      {/* </Roll> */}
-      {/* {right side} */}
-      {/* <div className="cards">
-        <motion.div
-          style={{ left: "12rem" }}
-          transition={{ repeat: 100000, repeatType: "reverse", duration: 1 }}
-          animate={{ x: 50 }}
-        >
-          <Card
-            emoji={HearEmoji}
-            heading={"Design"}
-            detail={"Figma,Sketch,Photoshop,Adobe"}
-          />
-        </motion.div>
-        <motion.div
-          style={{ top: "12rem", left: "-4rem" }}
-          transition={{ repeat: 100000, repeatType: "reverse", duration: 1 }}
-          animate={{ x: 50 }}
-        >
-          <Card
-            emoji={Glasses}
-            heading={"Developer"}
-            detail={"Figma,Sketch,Photoshop,Adobe"}
-          />
-        </motion.div>
-        <motion.div style={{ top: "19rem", left: "16rem" }}
-        
-        transition={{ repeat: 100000, repeatType: "reverse", duration: 1 }}
-        animate={{ x: 80 }}>
-          <Card
-            emoji={Humble}
-            heading={"UI/UX"}
-            detail={"Figma,Sketch,Photoshop,Adobe"}
-          />
-        </motion.div>
-        <div
-          className="blur s-blur2"
-          style={{ background: "var(--purple" }}
-        ></div>
-      </div> */}
+     
 <Roll right>
       <div className="right-side">
         <h3>My Skills</h3>
         <div className="ul-skills">
-          <ul>
+          <ul className="ul-services">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -99,7 +60,7 @@ const Services = () => {
             <li>C++ , C</li>
           </ul>
 
-          <ul>
+          <ul className="ul-services">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -114,7 +75,7 @@ const Services = () => {
             <li>Overleaf</li>
             <li>Animations</li>
           </ul>
-          <ul>
+          <ul className="ul-services">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"

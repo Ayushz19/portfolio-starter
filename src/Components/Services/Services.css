@@ -93,11 +93,11 @@ ul svg {
 }
 ul {
 }
-ul li {
+.ul-services >li {
   list-style-type: none;
   text-indent: -1.4em;
 }
-li {
+.ul-services>li {
   margin: 6px;
 }
 @media screen and (max-width: 480px) {
@@ -133,7 +133,7 @@ li {
     align-items: self-start;
   }
 
-  li{
+  .ul-services>li{
     display: flex;
     flex-direction: column;
     text-align: center;

@@ -6,13 +6,13 @@ import VS from "../../img/VS.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-
+import Roll from "react-reveal/Roll";
 
 const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="works">
+    <div className="works" id="work">
       <div className="awesome">
         <span
           style={{
@@ -36,36 +36,37 @@ const Works = () => {
 
         <div className="blur s-blur" style={{ background: "#ABF1FF94" }}></div>
       </div>
+      
+        <div className="w-right">
+        <Roll left>
+          <motion.div
+            className="w-mainCircle"
+            animate={{ rotate: 360 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+            transition={{ repeat: 50, repeatType: "reverse", duration: 10 }}
+          >
+            <div className="w-secCircle">
+              <img className="ds" src={debsoc} alt="" />
+            </div>
+            <div className="w-secCircle">
+              <img className="ra" src={RA} alt="" />
+            </div>
+            <div className="w-secCircle">
+              <img className="vistaar" src={VS} alt="" />
+            </div>
 
-      <div className="w-right">
-        <motion.div
-          className="w-mainCircle"
-          animate={{ rotate: 360 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 }
-          }}
-          transition={{ repeat: 50, repeatType: "reverse", duration: 10 }}
-          
-          
-        >
-          <div className="w-secCircle">
-            <img className="ds" src={debsoc} alt=""
-             />
-          </div>
-          <div className="w-secCircle">
-            <img className="ra" src={RA} alt="" />
-          </div>
-          <div className="w-secCircle">
-            <img className="vistaar" src={VS} alt="" />
-          </div>
-
-          {/* bg circle */}
-          
-        </motion.div>
-        <div className="w-backCircle blueCircle" ></div>
+            {/* bg circle */}
+          </motion.div>
+          </Roll>
+          <Roll right>
+          <div className="w-backCircle blueCircle"></div>
           <div className="w-backCircle yellowCircle"></div>
-      </div>
+          </Roll>
+        </div>
+      
     </div>
   );
 };
