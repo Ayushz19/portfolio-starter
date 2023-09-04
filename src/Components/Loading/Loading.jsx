@@ -7,6 +7,8 @@ import ReactVivus from "react-vivus";
 const Loading = () => {
   return (
     <div className="loading-screen">
+
+
       <svg
       id="my-svg"
         width="870"
@@ -50,22 +52,23 @@ const Loading = () => {
           stroke="white"
           stroke-width="3"
         />
-      </svg>
+      </svg> 
+      
 
-      <ReactVivus
-        className="svg-loading"
-        id="my-svg"
-        option={{
-          animTimingFunction: "EASE",
-          type: "oneByOne",
-          duration:500 ,
-          onReady: console.log,
-        }}
-        style={{ height: "100px", width: "100px" }}
-        callback={console.log}
-      />
+        <ReactVivus
+          className="svg-loading"
+          id="my-svg"
+          option={{
+            animTimingFunction: "EASE",
+            type: "sync",
+            duration: 170,
+            onReady: console.log,
+          }}
+          style={{ height: "100px", width: "100px" }}
+          callback={console.log}
+        />
 
-      {/* <AtomicSpinner /> */}
+      
     </div>
   );
 };
