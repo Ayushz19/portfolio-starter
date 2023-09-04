@@ -1,8 +1,8 @@
 import React from "react";
 import "./Loading.css";
-import svg from "../../img/hi.svg";
+
 import ReactVivus from "react-vivus";
-import AtomicSpinner from "atomic-spinner";
+
 
 const Loading = () => {
   return (
