@@ -23,21 +23,21 @@ const Works = () => {
         </span>
         <span>Organisation</span>
         <span>
-          Lorem Ipsum is simply dummy text of the printing
+          I have had the privilege of working in several esteemed organizations
           <br />
-          and typesetting industry.
+          throughout , each contributing significantly to my
           <br />
-          welkfnwefffffffffffffwlke
-          <br />
-          qwdnofnowfnonfo3nfo3nff3o
+          professional growth and skill set
+          <br />and eager to leverage this rich background to bring 
+          innovation to my future endeavors.
         </span>
 
         <button className="button s-button">Hire Me</button>
 
         <div className="blur s-blur" style={{ background: "#ABF1FF94" }}></div>
       </div>
-      
-        <div className="w-right">
+
+      <div className="w-right">
         <Roll left>
           <motion.div
             className="w-mainCircle"
@@ -60,13 +60,12 @@ const Works = () => {
 
             {/* bg circle */}
           </motion.div>
-          </Roll>
-          <Roll right>
+        </Roll>
+        <Roll right>
           <div className="w-backCircle blueCircle"></div>
           <div className="w-backCircle yellowCircle"></div>
-          </Roll>
-        </div>
-      
+        </Roll>
+      </div>
     </div>
   );
 };

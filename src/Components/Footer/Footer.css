@@ -16,11 +16,13 @@
   margin-top: 4rem;
   gap: 4rem;
   color: white;
+
 }
 
 .f-icons{
     display: flex;
     gap: 2rem;
+    cursor: pointer;
 }
 
 
