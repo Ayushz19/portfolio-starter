@@ -12,26 +12,9 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 import Roll from "react-reveal/Roll";
-// import Typewriter from "typewriter-effect/dist/core";
+import { Link } from "react-scroll";
+
 const Intro = () => {
-  // var app = document.getElementById("ap");
-
-  // var typewriter = new Typewriter(app, {
-  //   loop: true,
-  //   delay: 75,
-  // });
-
-  // typewriter
-
-  // .pauseFor(2500)
-  // .typeString('Ayush Verma')
-  // .pauseFor(300)
-  // .deleteChars(10)
-  // .typeString('')
-  // .typeString('')
-  // .pauseFor(1000)
-  // .start();
-
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -52,7 +35,10 @@ const Intro = () => {
             and quality work
           </span>
         </div>
-        <button className="button i-button">Hire me</button>
+        <Link spy={true} to="contact" smooth={true}>
+          {" "}
+          <button className="button i-button">Hire me</button>
+        </Link>
         <div className="i-icons">
           <img
             src={Github}

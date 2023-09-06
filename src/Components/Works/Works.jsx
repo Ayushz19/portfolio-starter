@@ -7,6 +7,7 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 import Roll from "react-reveal/Roll";
+import { Link } from "react-scroll";
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -31,8 +32,9 @@ const Works = () => {
           <br />and eager to leverage this rich background to bring 
           innovation to my future endeavors.
         </span>
-
-        <button className="button s-button">Hire Me</button>
+<Link spy={true} to="contact" smooth={true} >
+      <button className="button s-button"  >Hire Me</button>
+                    </Link>
 
         <div className="blur s-blur" style={{ background: "#ABF1FF94" }}></div>
       </div>
