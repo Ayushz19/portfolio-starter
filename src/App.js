@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { useState , useEffect } from "react";
 import svg from '../src/img/hi.svg'
 import Loading from "./Components/Loading/Loading";
+import { Analytics } from '@vercel/analytics/react';
 
 import "./App.css";
 
@@ -31,6 +32,7 @@ function App() {
       }}
     >
       {loading && <Loading />}
+      <Analytics />
       <Navbar />
       <Intro />
       <Services />
