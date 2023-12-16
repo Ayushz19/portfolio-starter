@@ -24,6 +24,7 @@ function App() {
     setTimeout(() => setLoading(false), 3000)
   }, [])
   return (
+    <>
     <div
       className="App"
       style={{
@@ -32,7 +33,7 @@ function App() {
       }}
     >
       {loading && <Loading />}
-      <Analytics />
+     
       <Navbar />
       <Intro />
       <Services />
@@ -41,7 +42,9 @@ function App() {
       <Portfolio />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
+    </>
   );
 }
 
