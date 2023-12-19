@@ -34,7 +34,7 @@ function App() {
       }}
     >
       {loading && <Loading />}
-      <SpeedInsights />
+      
       <Navbar />
       <Intro />
       <Services />
@@ -44,6 +44,7 @@ function App() {
       <Contact />
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </div>
     </>
   );
