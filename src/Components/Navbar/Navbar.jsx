@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="n-wrapper">
-      // eslint-disable-next-line jsx-a11y/alt-text
+      
       <img
         src={Ham}
         className="ham"

@@ -12,6 +12,7 @@ import { useState , useEffect } from "react";
 import svg from '../src/img/hi.svg'
 import Loading from "./Components/Loading/Loading";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 import "./App.css";
 
@@ -33,7 +34,7 @@ function App() {
       }}
     >
       {loading && <Loading />}
-     
+      <SpeedInsights />
       <Navbar />
       <Intro />
       <Services />
