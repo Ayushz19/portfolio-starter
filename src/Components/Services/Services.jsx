@@ -54,6 +54,7 @@ const Services = () => {
               </svg>
               <h4>Tech Skills</h4>
               <li>React Js</li>
+              <li>Next Js</li>
               <li>HTML , CSS</li>
               <li>Javascript</li>
               <li>Tailwind</li>
